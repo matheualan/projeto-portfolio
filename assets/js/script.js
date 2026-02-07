@@ -21,7 +21,7 @@ async function getAboutGithub() {
     try {
 
         // Não esqueça de trocar conteudoGeneration pelo seu usuário do GitHub
-        const resposta = await fetch('https://api.github.com/users/conteudoGeneration');
+        const resposta = await fetch('https://api.github.com/users/matheualan');
         const perfil = await resposta.json();
 
         about.innerHTML = '';
@@ -81,7 +81,7 @@ async function getProjectsGithub() {
     try {
 
         // Não esqueça de trocar conteudoGeneration pelo seu usuário do GitHub
-        const resposta = await fetch('https://api.github.com/users/conteudoGeneration/repos?sort=updated&per_page=6');
+        const resposta = await fetch('https://api.github.com/users/matheualan/repos?sort=updated&per_page=6');
         const repositorios = await resposta.json();
 
         swiperWrapper.innerHTML = '';
